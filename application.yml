@@ -8,7 +8,7 @@ lavalink:
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
 
-    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.5"
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.1"
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
 
@@ -37,13 +37,14 @@ plugins:
   lavasrc:
     providers:
       - "ytsearch:%QUERY%"
+      - "scsearch:%QUERY%"
 
     sources:
       spotify: true
 
     spotify:
-      clientId: "00565b4a154441b9999482ef0fa7537c"
-      clientSecret: "cadb9ab0ac5f4e619d7a303bdb99791c"
+      clientId: "YOUR_NEW_SPOTIFY_CLIENT_ID"
+      clientSecret: "YOUR_NEW_SPOTIFY_CLIENT_SECRET"
       countryCode: "GB"
 
 logging:
