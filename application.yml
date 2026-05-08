@@ -8,7 +8,7 @@ lavalink:
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
 
-    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.1"
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.5"
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
 
@@ -36,10 +36,7 @@ plugins:
 
   lavasrc:
     providers:
-      - "ytsearch:%ISRC%"
       - "ytsearch:%QUERY%"
-      - "scsearch:%ISRC%"
-      - "scsearch:%QUERY%"
 
     sources:
       spotify: true
