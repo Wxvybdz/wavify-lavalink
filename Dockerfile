@@ -8,6 +8,4 @@ RUN wget https://github.com/lavalink-devs/Lavalink/releases/latest/download/Lava
 
 COPY application.yml .
 
-EXPOSE 2333
-
 CMD ["java", "-jar", "Lavalink.jar"]

@@ -9,3 +9,7 @@ lavalink:
       youtube: true
       soundcloud: true
       http: true
+
+logging:
+  level:
+    root: INFO
