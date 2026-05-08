@@ -13,3 +13,7 @@ lavalink:
 logging:
   level:
     root: INFO
+    lavalink:
+  server:
+    bufferDurationMs: 800
+    frameBufferDurationMs: 10000
