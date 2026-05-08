@@ -1,3 +1,4 @@
+```yml id="2d9e3j"
 server:
   port: ${PORT}
   address: 0.0.0.0
@@ -5,6 +6,10 @@ server:
 lavalink:
   plugins:
     - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.8.1"
+      repository: "https://maven.lavalink.dev/releases"
+      snapshot: false
+
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.1"
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
 
@@ -18,14 +23,22 @@ lavalink:
     trackStuckThresholdMs: 10000
 
     sources:
-      youtube: true
+      youtube: false
       soundcloud: true
       http: true
       local: false
 
 plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+
   lavasrc:
     providers:
+      - "ytsearch:%ISRC%"
+      - "ytsearch:%QUERY%"
       - "scsearch:%ISRC%"
       - "scsearch:%QUERY%"
 
@@ -39,4 +52,7 @@ plugins:
 
 logging:
   level:
+    root: INFO
+```
+
     root: INFO
