@@ -3,6 +3,11 @@ server:
   address: 0.0.0.0
 
 lavalink:
+  plugins:
+    - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.8.1"
+      repository: "https://maven.lavalink.dev/releases"
+      snapshot: false
+
   server:
     password: "youshallnotpass"
 
@@ -17,6 +22,20 @@ lavalink:
       soundcloud: true
       http: true
       local: false
+
+plugins:
+  lavasrc:
+    providers:
+      - "scsearch:%ISRC%"
+      - "scsearch:%QUERY%"
+
+    sources:
+      spotify: true
+
+    spotify:
+      clientId: "00565b4a154441b9999482ef0fa7537c"
+      clientSecret: "cadb9ab0ac5f4e619d7a303bdb99791c"
+      countryCode: "GB"
 
 logging:
   level:
