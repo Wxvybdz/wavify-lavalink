@@ -1,9 +1,11 @@
 server:
-  port: 2333
+  port: ${PORT}
   address: 0.0.0.0
 
 lavalink:
   server:
     password: "youshallnotpass"
-
-plugins: []
+    sources:
+      youtube: true
+      soundcloud: true
+      http: true
