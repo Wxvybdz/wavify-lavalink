@@ -36,6 +36,8 @@ plugins:
 
   lavasrc:
     providers:
+      - "ytsearch:%ISRC%"
+      - "ytsearch:%QUERY% official audio"
       - "ytsearch:%QUERY% lyric video"
       - "ytsearch:%QUERY%"
       - "scsearch:%QUERY%"
