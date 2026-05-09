@@ -43,8 +43,8 @@ plugins:
       spotify: true
 
     spotify:
-      clientId: "YOUR_NEW_SPOTIFY_CLIENT_ID"
-      clientSecret: "YOUR_NEW_SPOTIFY_CLIENT_SECRET"
+      clientId: "00565b4a154441b9999482ef0fa7537c"
+      clientSecret: "cadb9ab0ac5f4e619d7a303bdb99791c"
       countryCode: "GB"
 
 logging:
