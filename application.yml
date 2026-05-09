@@ -36,8 +36,8 @@ plugins:
 
   lavasrc:
     providers:
-      - "ytsearch:%QUERY%"
       - "scsearch:%QUERY%"
+      - "ytsearch:%QUERY%"
 
     sources:
       spotify: true
