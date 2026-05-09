@@ -36,8 +36,9 @@ plugins:
 
   lavasrc:
     providers:
-      - "scsearch:%QUERY%"
+      - "ytsearch:%QUERY% lyric video"
       - "ytsearch:%QUERY%"
+      - "scsearch:%QUERY%"
 
     sources:
       spotify: true
