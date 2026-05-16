@@ -33,13 +33,18 @@ plugins:
     allowSearch: true
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
+    clients:
+      - MUSIC
+      - ANDROID_TESTSUITE
+      - TVHTML5EMBEDDED
+      - WEB
 
   lavasrc:
     providers:
-      - "ytsearch:%ISRC%"
-      - "ytsearch:%QUERY% official audio"
-      - "ytsearch:%QUERY% lyric video"
-      - "ytsearch:%QUERY%"
+      - "ytmsearch:%ISRC%"
+      - "ytmsearch:%QUERY% official audio"
+      - "ytmsearch:%QUERY% lyric video"
+      - "ytmsearch:%QUERY%"
       - "scsearch:%QUERY%"
 
     sources:
@@ -53,3 +58,4 @@ plugins:
 logging:
   level:
     root: INFO
+    lavalink: INFO
