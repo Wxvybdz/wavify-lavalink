@@ -36,14 +36,14 @@ plugins:
     clients:
       - MUSIC
       - ANDROID_TESTSUITE
-      - TVHTML5EMBEDDED
       - WEB
+      - WEBEMBEDDED
 
   lavasrc:
     providers:
       - "ytmsearch:%ISRC%"
-      - "ytmsearch:%QUERY% official audio"
-      - "ytmsearch:%QUERY% lyric video"
+      - "ytmsearch:%QUERY% audio"
+      - "ytmsearch:%QUERY% lyrics"
       - "ytmsearch:%QUERY%"
       - "scsearch:%QUERY%"
 
