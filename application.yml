@@ -35,18 +35,13 @@ plugins:
     allowDirectPlaylistIds: true
 
     clients:
-      - M_WEB
       - WEB
-      - MUSIC
-      - TVHTML5EMBEDDED
+      - WEB_REMIX
 
     oauth:
       enabled: true
-      skipInitialization: false
-      # After you get a token, change this section to:
-      # enabled: true
-      # refreshToken: "YOUR_REFRESH_TOKEN_HERE"
-      # skipInitialization: true
+      refreshToken: "PASTE_YOUR_REFRESH_TOKEN_HERE"
+      skipInitialization: true
 
   lavasrc:
     providers:
