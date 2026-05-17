@@ -35,17 +35,21 @@ plugins:
     allowDirectPlaylistIds: true
 
     clients:
-      - ANDROID_VR
-      - ANDROID_TESTSUITE
+      - MUSIC
       - TVHTML5EMBEDDED
-      - IOS
+      - WEBEMBEDDED
+      - ANDROID_TESTSUITE
+
+    oauth:
+      enabled: false
 
   lavasrc:
     providers:
-      - "ytmsearch:%ISRC%"
-      - "ytmsearch:%QUERY% official audio"
-      - "ytmsearch:%QUERY% lyric video"
-      - "ytmsearch:%QUERY%"
+      - "ytsearch:%ISRC% audio"
+      - "ytsearch:%QUERY% official audio"
+      - "ytsearch:%QUERY% lyric video"
+      - "ytsearch:%QUERY% audio"
+      - "ytsearch:%QUERY%"
       - "scsearch:%QUERY%"
 
     sources:
