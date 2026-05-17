@@ -42,9 +42,7 @@ plugins:
 
     oauth:
       enabled: true
-      # First time: leave refreshToken commented out.
-      # After Lavalink gives you a refresh token in the logs,
-      # paste it below and uncomment it.
+      # First Railway deploy: leave these two commented.
       # refreshToken: "PASTE_REFRESH_TOKEN_HERE"
       # skipInitialization: true
 
