@@ -40,8 +40,8 @@ plugins:
 
     oauth:
       enabled: true
-      refreshToken: "PASTE_YOUR_REFRESH_TOKEN_HERE"
-      skipInitialization: true
+      
+      skipInitialization: false
 
   lavasrc:
     providers:
