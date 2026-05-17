@@ -21,11 +21,11 @@ lavalink:
     resamplingQuality: MEDIUM
     trackStuckThresholdMs: 10000
 
-    sources:
-      youtube: false
-      soundcloud: false
-      http: true
-      local: false
+sources:
+  youtube: false
+  soundcloud: true
+  http: true
+  local: false
 
 plugins:
   youtube:
