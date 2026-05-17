@@ -35,21 +35,26 @@ plugins:
     allowDirectPlaylistIds: true
 
     clients:
-      - WEB_REMIX
+      - M_WEB
+      - WEB
+      - MUSIC
+      - TVHTML5EMBEDDED
 
     oauth:
       enabled: true
-      # First deploy: leave these commented.
-      # refreshToken: "PASTE_REFRESH_TOKEN_HERE"
+      skipInitialization: false
+      # After you get a token, change this section to:
+      # enabled: true
+      # refreshToken: "YOUR_REFRESH_TOKEN_HERE"
       # skipInitialization: true
 
   lavasrc:
     providers:
-      - "ytmsearch:%ISRC%"
-      - "ytmsearch:%QUERY% official audio"
-      - "ytmsearch:%QUERY% lyric video"
-      - "ytmsearch:%QUERY% audio"
-      - "ytmsearch:%QUERY%"
+      - "ytsearch:%ISRC% audio"
+      - "ytsearch:%QUERY% official audio"
+      - "ytsearch:%QUERY% lyric video"
+      - "ytsearch:%QUERY% audio"
+      - "ytsearch:%QUERY%"
 
     sources:
       spotify: true
@@ -63,4 +68,4 @@ logging:
   level:
     root: INFO
     lavalink: INFO
-    dev.lavalink.youtube.http.YoutubeOauth2Handler: INFO
+    dev.lavalink.youtube.http.YoutubeOauth2Handler: DEBUG
