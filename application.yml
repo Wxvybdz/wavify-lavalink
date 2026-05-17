@@ -23,7 +23,7 @@ lavalink:
 
     sources:
       youtube: false
-      soundcloud: true
+      soundcloud: false
       http: true
       local: false
 
@@ -35,6 +35,7 @@ plugins:
     allowDirectPlaylistIds: true
 
     clients:
+      - WEB
       - MUSIC
       - TVHTML5EMBEDDED
       - WEBEMBEDDED
@@ -50,7 +51,6 @@ plugins:
       - "ytsearch:%QUERY% lyric video"
       - "ytsearch:%QUERY% audio"
       - "ytsearch:%QUERY%"
-      - "scsearch:%QUERY%"
 
     sources:
       spotify: true
