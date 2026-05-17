@@ -41,7 +41,12 @@ plugins:
       - TVHTML5EMBEDDED
 
     oauth:
-      enabled: false
+      enabled: true
+      # First time: leave refreshToken commented out.
+      # After Lavalink gives you a refresh token in the logs,
+      # paste it below and uncomment it.
+      # refreshToken: "PASTE_REFRESH_TOKEN_HERE"
+      # skipInitialization: true
 
   lavasrc:
     providers:
@@ -63,3 +68,4 @@ logging:
   level:
     root: INFO
     lavalink: INFO
+    dev.lavalink.youtube.http.YoutubeOauth2Handler: INFO
