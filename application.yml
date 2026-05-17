@@ -36,13 +36,12 @@ plugins:
 
     clients:
       - WEB
-      - MUSIC
-      - ANDROID_TESTSUITE
-      - TVHTML5EMBEDDED
+      - WEB_REMIX
 
     oauth:
       enabled: true
-      # First Railway deploy: leave these two commented.
+      # First deploy: leave these commented.
+      # After Railway gives you the refresh token, paste it here.
       # refreshToken: "PASTE_REFRESH_TOKEN_HERE"
       # skipInitialization: true
 
