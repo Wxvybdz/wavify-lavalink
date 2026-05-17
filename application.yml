@@ -35,23 +35,21 @@ plugins:
     allowDirectPlaylistIds: true
 
     clients:
-      - WEB
       - WEB_REMIX
 
     oauth:
       enabled: true
       # First deploy: leave these commented.
-      # After Railway gives you the refresh token, paste it here.
       # refreshToken: "PASTE_REFRESH_TOKEN_HERE"
       # skipInitialization: true
 
   lavasrc:
     providers:
-      - "ytsearch:%ISRC% audio"
-      - "ytsearch:%QUERY% official audio"
-      - "ytsearch:%QUERY% lyric video"
-      - "ytsearch:%QUERY% audio"
-      - "ytsearch:%QUERY%"
+      - "ytmsearch:%ISRC%"
+      - "ytmsearch:%QUERY% official audio"
+      - "ytmsearch:%QUERY% lyric video"
+      - "ytmsearch:%QUERY% audio"
+      - "ytmsearch:%QUERY%"
 
     sources:
       spotify: true
